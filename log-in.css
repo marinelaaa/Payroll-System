@@ -1,0 +1,59 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.login-container {
+    background-color: #fff;
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 400px; 
+    border: 2px solid #000; 
+}
+
+h2 {
+    color: #000;
+    font-size: 24px; 
+}
+
+form {
+    margin-top: 20px;
+}
+
+.button-container {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.admin-button,
+.employee-button {
+    width: 100%;
+    padding: 15px;
+    border: 2px solid #000; 
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 18px; 
+    background-color: #CFC4BC; 
+}
+
+.admin-button {
+    color: #000;
+    margin-bottom: 10px; 
+}
+
+.employee-button {
+    color: #000;
+}
+
+.admin-button:hover,
+.employee-button:hover {
+    background-color: #b3a396; 
+}
