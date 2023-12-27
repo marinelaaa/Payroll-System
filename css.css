@@ -1,0 +1,40 @@
+h1 {
+    color: black;
+    font-size: 50px;
+
+}
+/*
+body {
+    font-size: 18px;
+    color:black;
+    height: 700px;
+    background-color: #F5D0AB;
+    background-image: linear-gradient(to bottom right, #826940, #D6BB90, #ADACAA, #4F4023 );
+}*/
+body {
+    background-image: url('design2.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;  
+    background-size: cover;
+  }
+#signup-container {
+    width: 400px; 
+    margin: 0 auto;
+    /*margin: 40px;
+    margin-top: 5px;*/
+    padding: 20px;
+    padding-bottom: 40px;
+    background-color: #CFC4BC;
+    border: 3px solid black;
+    border-radius: 8px; 
+}
+input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 12px;
+    box-sizing: border-box;
+}
+label {
+    color: black;
+}
+
