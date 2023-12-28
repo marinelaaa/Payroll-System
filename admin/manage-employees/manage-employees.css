@@ -1,0 +1,147 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+}
+
+.top-bar {
+    background-color: #90837a;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #fff;
+}
+
+.hamburger-menu {
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.title-container {
+    text-align: center;
+    flex-grow: 1;
+}
+
+.title-container h1 {
+    margin: 0;
+    font-size: 18px;
+}
+
+.profile-section {
+    display: flex;
+    align-items: center;
+    color: #fff;
+    cursor: pointer;
+    margin-right: 20px;
+}
+
+.profile-section i {
+    font-size: 24px;
+    margin-right: 5px;
+}
+
+.wrapper {
+    display: flex;
+    height: 100vh;
+}
+
+li {
+    padding-top: 16px;
+    padding-bottom: 16px;
+    margin-top: 16px;
+    margin-bottom: 16px;
+}
+
+.sidebar {
+    width: 200px;
+    background-color: #333;
+    color: #fff;
+    padding-top: 20px;
+    transition: 0.3s;
+}
+
+.menu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.menu li {
+    padding: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.menu li:hover {
+    background-color: #555;
+}
+
+.content {
+    flex-grow: 1;
+    padding: 20px;
+    background-color: #f0f0f0;
+}
+
+.employee-table table {
+    width: 100%;
+    border-collapse: collapse;
+    border: 2px solid black; 
+}
+
+.employee-table th, .employee-table td {
+    padding: 12px;
+    text-align: left;
+    border: 1px solid black;
+}
+
+.employee-table th {
+    background-color: #CFC4BC;
+    color: black;
+}
+
+.employee-content {
+    color: black;
+    padding: 20px;
+    overflow-x: auto;
+    width: 100%;
+}
+
+.button-container {
+    margin-top: 20px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+}
+
+.add-button, .save-button {
+    padding: 10px;
+    background-color: #CFC4BC;
+    color: white;
+    border: 1px solid white;
+    cursor: pointer;
+    margin-right: 10px;
+    transition: background-color 0.3s;
+}
+
+.add-button:hover, .save-button:hover {
+    background-color: #b3a396;
+}
+
+@media screen and (max-width: 768px) {
+    .wrapper {
+        flex-direction: column;
+    }
+
+    .sidebar {
+        width: 0;
+        overflow: hidden;
+    }
+
+    .wrapper.active .sidebar {
+        width: 200px;
+    }
+
+    .wrapper.active .content {
+        margin-left: 200px;
+    }
+}
