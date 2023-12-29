@@ -45,6 +45,15 @@ body {
     height: 100vh;
 }
 
+.content {
+    flex-grow: 1;
+    padding: 20px; 
+    border: 1px solid #ddd; 
+    border-radius: 8px; 
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
+    background-color: #fff; 
+}
+
 li {
     padding-top: 16px;
     padding-bottom: 16px;
@@ -76,57 +85,6 @@ li {
     background-color: #555;
 }
 
-.content {
-    flex-grow: 1;
-    padding: 20px;
-    background-color: #f0f0f0;
-}
-
-.employee-table table {
-    width: 100%;
-    border-collapse: collapse;
-    border: 2px solid black; 
-}
-
-.employee-table th, .employee-table td {
-    padding: 12px;
-    text-align: center;
-    border: 1px solid black;
-}
-
-.employee-table th {
-    background-color: #CFC4BC;
-    color: black;
-}
-
-.employee-content {
-    color: black;
-    padding: 20px;
-    overflow-x: auto;
-    width: 100%;
-}
-
-.button-container {
-    margin-top: 20px;
-    display: flex;
-    align-items: flex-end;
-    justify-content: flex-end;
-}
-
-.add-button, .save-button {
-    padding: 10px;
-    background-color: #CFC4BC;
-    color: black;
-    border: 1px solid black;
-    cursor: pointer;
-    margin-right: 10px;
-    transition: background-color 0.3s;
-}
-
-.add-button:hover, .save-button:hover {
-    background-color: #b3a396;
-}
-
 @media screen and (max-width: 768px) {
     .wrapper {
         flex-direction: column;
@@ -146,41 +104,78 @@ li {
     }
 }
 
-.search-bar-container {
-    display: flex;
+main {
+    padding: 20px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    justify-content: center;
     align-items: center;
-    justify-content: flex-end;
-    margin-top: auto;
-    margin-bottom: auto;
-    border: 1px solid black;
 }
 
-.search-bar {
-    padding: 10px;
-    border: 2px solid white;
-    border-radius: 5px;
-    outline: none;
+th, td {
+    padding: 8px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 }
 
-.search-button {
-    background-color: #CFC4BC;
-    color: white;
-    border: 1px solid white;
-    border-radius: 5px;
-    padding: 10px;
-    margin: auto;
-    cursor: pointer;
-    transition: background-color 0.3s;
+th {
+    background-color: #f2f2f2;
+    justify-content: center;
+    align-items: center;
 }
 
-.search-button:hover {
-    background-color: #b3a396;
-}
-
-.employee-content-header{
+.dashboard {
     display: flex;
-    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.dashboard-item {
+    text-align: center;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    flex-grow: 1;
+    margin: 0 10px;
+}
+
+.salary, .total-deduction {
+    margin-top: 20px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+}
+
+.salary h2, .total-deduction h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.salary p, .total-deduction p {
+    font-size: 16px;
+    margin: 0;
+}
+
+.salary-and-deduction-header{
+    padding-top: 16px;
+    padding-bottom: 16px;
+    display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-bottom: 16px;
+    color: black;
+}
+
+.salary-and-deduction-date{
+    background-color:  #CFC4BC;
+    padding-right: 16px;
+    padding-left: 16px;
+    border-radius: 8px;
+    border: 1px solid white; 
 }

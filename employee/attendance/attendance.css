@@ -1,0 +1,209 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+}
+
+.top-bar {
+    background-color: #90837a;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #fff;
+}
+
+.hamburger-menu {
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.title-container {
+    text-align: center;
+    flex-grow: 1;
+}
+
+.title-container h1 {
+    margin: 0;
+    font-size: 18px;
+}
+
+.profile-section {
+    display: flex;
+    align-items: center;
+    color: #fff;
+    cursor: pointer;
+    margin-right: 20px;
+}
+
+.profile-section i {
+    font-size: 24px;
+    margin-right: 5px;
+}
+
+.wrapper {
+    display: flex;
+    height: 100vh;
+}
+
+li {
+    padding-top: 16px;
+    padding-bottom: 16px;
+    margin-top: 16px;
+    margin-bottom: 16px;
+}
+
+.sidebar {
+    width: 200px;
+    background-color: #333;
+    color: #fff;
+    padding-top: 20px;
+    transition: 0.3s;
+}
+
+.menu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.menu li {
+    padding: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.menu li:hover {
+    background-color: #555;
+}
+
+.employee-content {
+    flex-grow: 1;
+    padding: 20px;
+    background-color: #f0f0f0;
+}
+
+.form-container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+}
+
+input[type="text"] {
+    width: 100%;
+    padding: 8px;
+    box-sizing: border-box;
+}
+
+input[type="file"] {
+    display: none;
+}
+
+.file-upload-btn {
+    background-color: #4caf50;
+    color: #fff;
+    padding: 8px 12px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    display: inline-block;
+}
+
+#file-input-label {
+    display: inline-block;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+.submit-btn {
+    background-color: #CFC4BC;
+    color: solid black;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.edit-save-btn-container {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+}
+
+.edit-btn,
+.save-btn {
+    background-color: #CFC4BC;
+    color: solid black;
+    padding: 8px 12px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-left: 5px;
+}
+
+.button-container {
+    margin-top: 20px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+}
+
+@media screen and (max-width: 768px) {
+    .wrapper {
+        flex-direction: column;
+    }
+
+    .sidebar {
+        width: 0;
+        overflow: hidden;
+    }
+
+    .wrapper.active .sidebar {
+        width: 200px;
+    }
+
+    .wrapper.active .content {
+        margin-left: 200px;
+    }
+}
+
+.centered-content {
+    flex-grow: 1;
+    padding: 20px;
+    background-color: #f0f0f0;
+}
+
+.attendance-container { 
+    border-radius: 8px; 
+    padding: 16px; margin: 16px; 
+}
+
+.total-count {
+    margin-top: 20px;
+    text-align: left;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th, td {
+    padding: 12px;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+}
+
+th {
+    background-color: #f2f2f2;
+}

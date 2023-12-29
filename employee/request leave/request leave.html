@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
+    <link rel="stylesheet" href="request leave.css">
+    <title>Interior Hub Payroll System</title>
+</head>
+<body>
+    <div class="top-bar">
+        <div class="hamburger-menu" onclick="toggleSidebar()">
+            <i class="fas fa-bars"></i>
+        </div>
+        <div class="title-container">
+            <h1>INTERIOR HUB PAYROLL SYSTEM</h1>
+        </div>
+        <div class="profile-section">
+            <i class="fas fa-user"></i>
+            <span>Employee</span>
+        </div>
+    </div>
+
+    <div class="wrapper">
+        <nav class="sidebar">
+            <ul class="menu">
+                <li class="menu-item"><i class="fas fa-users"></i> Profile</li>
+                <li class="menu-item"><i class="far fa-clock"></i> Attendance</li>
+                <li class="menu-item"><i class="fas fa-coins"></i> Salary & Deduction</li>
+                <li class="menu-item"><i class="far fa-calendar-alt"></i> Request Leave</li>
+                <li class="menu-item"><i class="fas fa-sign-out-alt"></i> Log Out</li>
+            </ul>
+        </nav>
+
+            <div class="leave-request-header">
+                <div class="request-leave-title"><h2>Request Leave</h2></div>
+                <div class="request-leave-date"><p>January 1, 2024</p></div>
+
+                    <div class="form-left-column">
+                        <label for="start_date">Date Start of Leave:</label>
+                        <input type="date" id="start_date" name="start_date" required>
+                        <br>
+                        <label for="end_date">Date End of Leave:</label>
+                        <input type="date" id="end_date" name="end_date" required>
+                        <br>
+                        <label for="leave_type">Type of Leave:</label>
+                        <input type="text" id="leave_type" name="leave_type" required>
+                        <br>
+                        <input type="submit" value="Send Request" class="send-request-btn">
+                    </div>
+
+
+                    <div class="form-right-column">
+                        <div class="leave-status">
+                            <h2>Leave Status</h2>
+                            <p>Status: <span id="status">Pending</span></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

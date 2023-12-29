@@ -1,0 +1,162 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+}
+
+.top-bar {
+    background-color: #90837a;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #fff;
+}
+
+.hamburger-menu {
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.title-container {
+    text-align: center;
+    flex-grow: 1;
+}
+
+.title-container h1 {
+    margin: 0;
+    font-size: 18px;
+}
+
+.profile-section {
+    display: flex;
+    align-items: center;
+    color: #fff;
+    cursor: pointer;
+    margin-right: 20px;
+}
+
+.profile-section i {
+    font-size: 24px;
+    margin-right: 5px;
+}
+
+.wrapper {
+    height: 100vh;
+}
+
+
+@media screen and (max-width: 768px) {
+    .wrapper {
+        flex-direction: column;
+    }
+
+    .sidebar {
+        width: 0;
+        overflow: hidden;
+    }
+
+    .wrapper.active .sidebar {
+        width: 200px;
+    }
+
+    .wrapper.active .content {
+        margin-left: 200px;
+    }
+}
+
+.dashboard-header{
+    padding: 16px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: black;
+}
+
+.dashboard-title{
+    background-color:  #CFC4BC;
+    padding-right: 16px;
+    padding-left: 16px;
+    border-radius: 8px;
+    border: 1px solid white; 
+}
+
+.dashboard-date{
+    background-color:  #CFC4BC;
+    padding-right: 16px;
+    padding-left: 16px;
+    border-radius: 8px;
+    border: 1px solid white; 
+}
+
+.dashboard-summary {
+    padding: 16px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: auto;
+}
+
+.dashboard-summary-item {
+    background-color: lightcoral;
+    color: black;
+    padding: 16px;
+    flex: 1;
+    border-radius: 16px;
+    margin-right: 32px; /* Adjust the margin to add space between items */
+}
+
+/* To avoid extra space on the last item, you can remove the margin */
+.dashboard-summary-item:last-child {
+    margin-right: 0;
+}
+
+
+.dashboard-summary-item-title {
+   border-bottom: 3px solid black;
+}
+
+.dashboard-summary-item-title p {
+    font-size: 24px;
+    font-weight: 500;
+    margin-top: 8px;
+    margin-bottom: 16px;
+    margin-right: 16px;
+    margin-left: 16px;
+}
+
+.dashboard-summary-item-content p {
+    font-size: 48px;
+    font-weight: 700;
+    margin: 16px;
+}
+
+.dashboard-content {
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+}
+
+.dashboard-content-title{
+    padding-bottom: 8px;
+}
+
+.dashboard-content-table table{
+    width: 100%;
+    border-collapse: collapse;
+    border: 2px solid black; 
+}
+
+
+.dashboard-content-table th, .dashboard-content-table td {
+    padding: 12px;
+    text-align: center;
+    border: 1px solid black;
+}
+
+.dashboard-content-table th {
+    background-color: #CFC4BC;
+    color: black;
+}
+
+
+

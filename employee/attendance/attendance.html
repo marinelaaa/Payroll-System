@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
+    <link rel="stylesheet" href="attendance.css"> 
+    <title>Interior Hub Payroll System</title>
+</head>
+<body>
+    <div class="top-bar">
+        <div class="hamburger-menu" onclick="toggleSidebar()">
+            <i class="fas fa-bars"></i>
+        </div>
+        <div class="title-container">
+            <h1>INTERIOR HUB PAYROLL SYSTEM</h1>
+        </div>
+        <div class="profile-section">
+            <i class="fas fa-user"></i>
+            <span>Employee</span>
+        </div>
+    </div>
+
+    <div class="wrapper">
+        <nav class="sidebar">
+            <ul class="menu">
+                <li class="menu-item"><i class="fas fa-users"></i> Profile</li>
+                <li class="menu-item"><i class="far fa-clock"></i> Attendance</li>
+                <li class="menu-item"><i class="fas fa-coins"></i> Salary & Deduction</li>
+                <li class="menu-item"><i class="far fa-calendar-alt"></i> Request Leave</li>
+                <li class="menu-item"><i class="fas fa-sign-out-alt"></i> Log Out</li>
+            </ul>
+        </nav>
+        
+        <div class="centered-content">
+            <div class="attendance-container">
+                <div class="form-container">
+                    <div class="employee-content-header">
+                        <h2>Employee Attendance</h2>
+                    </div>
+                    <table>
+                        <tr>
+                        <th>ID</th>
+                        <th>Name</th>
+                        <th>Date</th>
+                        <th>Time In</th>
+                        <th>Time Out</th>
+                        </tr>
+                        <tr>
+                        <td>0001</td>
+                        <td>Sharlyn Ecleo</td>
+                        <td><input type="date" class="attendance-date" value="2023-01-01" enable></td>
+                        <td><input type="time" class="time-in" value="09:00" enable></td>
+                        <td><input type="time" class="time-out" value="17:00" enable></td>
+                        </tr>
+
+                    </table>
+    
+                    <div class="total-count">
+                        <p>Total Days Present: <span id="present-count">1</span></p>
+                        <p>Total Days Absent: <span id="absent-count">0</span></p>
+                        <p>Total Hours Worked: <span id="total-hours">8</span> hours</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

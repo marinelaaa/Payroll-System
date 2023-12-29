@@ -45,6 +45,15 @@ body {
     height: 100vh;
 }
 
+.content {
+    flex-grow: 1;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+}
+
 li {
     padding-top: 16px;
     padding-bottom: 16px;
@@ -76,56 +85,6 @@ li {
     background-color: #555;
 }
 
-.content {
-    flex-grow: 1;
-    padding: 20px;
-    background-color: #f0f0f0;
-}
-
-.employee-table table {
-    width: 100%;
-    border-collapse: collapse;
-    border: 2px solid black; 
-}
-
-.employee-table th, .employee-table td {
-    padding: 12px;
-    text-align: center;
-    border: 1px solid black;
-}
-
-.employee-table th {
-    background-color: #CFC4BC;
-    color: black;
-}
-
-.employee-content {
-    color: black;
-    padding: 20px;
-    overflow-x: auto;
-    width: 100%;
-}
-
-.button-container {
-    margin-top: 20px;
-    display: flex;
-    align-items: flex-end;
-    justify-content: flex-end;
-}
-
-.add-button, .save-button {
-    padding: 10px;
-    background-color: #CFC4BC;
-    color: black;
-    border: 1px solid black;
-    cursor: pointer;
-    margin-right: 10px;
-    transition: background-color 0.3s;
-}
-
-.add-button:hover, .save-button:hover {
-    background-color: #b3a396;
-}
 
 @media screen and (max-width: 768px) {
     .wrapper {
@@ -146,41 +105,54 @@ li {
     }
 }
 
-.search-bar-container {
+.form-columns {
     display: flex;
-    align-items: center;
-    justify-content: flex-end;
-    margin-top: auto;
-    margin-bottom: auto;
-    border: 1px solid black;
+    justify-content: space-between;
 }
 
-.search-bar {
-    padding: 10px;
-    border: 2px solid white;
-    border-radius: 5px;
-    outline: none;
+.form-columns {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
 }
 
-.search-button {
+.form-left-column {
+    flex: 1;
+    padding-right: 20px;
+}
+
+.form-right-column {
+    flex: 1;
+}
+
+.send-request-btn {
     background-color: #CFC4BC;
-    color: white;
-    border: 1px solid white;
-    border-radius: 5px;
-    padding: 10px;
-    margin: auto;
+    color: solid black;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
     cursor: pointer;
-    transition: background-color 0.3s;
+    font-size: 16px;
+    margin-top: 20px;
 }
 
-.search-button:hover {
-    background-color: #b3a396;
+.send-request-btn:hover {
+    background-color: #CFC4BC;
 }
 
-.employee-content-header{
+.request-leave-header{
+    padding-top: 16px;
+    padding-bottom: 16px;
     display: flex;
-    flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
-    padding-bottom: 16px;
+    color: black;
+}
+
+.request-leave-date{
+    background-color:  #CFC4BC;
+    padding-right: 16px;
+    padding-left: 16px;
+    border-radius: 8px;
+    border: 1px solid white; 
 }
