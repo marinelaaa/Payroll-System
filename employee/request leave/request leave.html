@@ -31,36 +31,36 @@
                 <li class="menu-item"><i class="fas fa-sign-out-alt"></i> Log Out</li>
             </ul>
         </nav>
-
+        <div class="content">
             <div class="leave-request-header">
                 <div class="request-leave-title"><h2>Request Leave</h2></div>
                 <div class="request-leave-date"><p>January 1, 2024</p></div>
+            </div>
 
-                    <div class="form-left-column">
-                        <label for="start_date">Date Start of Leave:</label>
+            <div class="leave-content-form">
+                <div class="form-left-column">
+                    <label for="start_date">Date Start of Leave:</label> 
                         <input type="date" id="start_date" name="start_date" required>
-                        <br>
-                        <label for="end_date">Date End of Leave:</label>
+                    <label for="end_date">Date End of Leave:</label>
                         <input type="date" id="end_date" name="end_date" required>
-                        <br>
-                        <label for="leave_type">Type of Leave:</label>
+                    <label for="leave_type">Type of Leave:</label>
                         <input type="text" id="leave_type" name="leave_type" required>
-                        <br>
-                        <input type="submit" value="Send Request" class="send-request-btn">
+                    <div class="send-button-container">
+                        <button class="send-request-btn">Send Request</button>
                     </div>
-
-
-                    <div class="form-right-column">
-                        <div class="leave-status">
-                            <h2>Leave Status</h2>
-                            <p>Status: <span id="status">Pending</span></p>
-                        </div>
+                    
+                </div>
+                <div class="form-right-column">
+                    <div class="leave-status">
+                        <h2>Leave Request Status</h2>
+                        <div class="leave-request-status">
+                            <h1>Pending</p>
+                        </di>
+                        
                     </div>
                 </div>
             </div>
         </div>
     </div>
-
-    <script src="script.js"></script>
 </body>
 </html>
